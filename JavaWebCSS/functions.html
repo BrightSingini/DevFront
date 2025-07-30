@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            function.com
+        </title>
+    </head>
+    <body>
+        <button onclick="let degrees_be  = 10;
+         let coverted = Deg2Far(10);
+         alert(`${coverted} degrees cercius`);
+
+         let far_deg = Far2Deg(coverted);
+         alert(`${far_deg} fahrenheit`);
+
+        ">Enter</button>
+        <script>
+            function Deg2Far(Deg_acc)
+            {
+                return (Deg_acc * 9/5) + 32;
+            }
+            function Far2Deg(Far_acc)
+            {
+                return ((Far_acc - 32)*5)/9;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Objects.com</title>
+    </head>
+    <body>
+        <script>
+            const product = {
+                name: 'socks',
+                price: 129,
+            };
+            console.log(product);
+            console.log(product.name);
+            console.log(product.price);
+            //bracket operator for Objects 
+            product['lets_try_me'] = 'tried';
+            
+            //lets change the name property in Object
+            product.name = 'pecks';
+            console.log(product.name);
+
+            //adding a new property in an object
+            product.newProperty = true;
+
+            console.log(product.newProperty);
+            //lets delete this newProperty 
+            delete product.newProperty;
+            //why use objects;
+            //makes code organised
+        </script>
+    </body>
+</html>

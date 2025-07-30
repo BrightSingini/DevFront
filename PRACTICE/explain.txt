@@ -1,0 +1,2 @@
+This is a web project exercise that involved practicing a grid-templates
+This is txt 

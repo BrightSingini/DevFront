@@ -1,0 +1,63 @@
+
+.Hello_button{
+    background-color: rgb(24, 16, 179);
+    color: white;
+    height: 30px;
+    width: 90px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.Hello_button:hover{
+    opacity: 0.8;
+}
+.Hello_button:active{
+    opacity: 0.5;
+}
+.Join{
+    background-color: white;
+    border-width: 2px;
+    border-color: rgb(63, 115, 206);
+    border-style: solid;
+    height: 30px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    color: rgb(63, 115, 206);
+    transition: background-color 1s, color 1s;
+}
+.Join:hover{
+    background-color: rgb(63, 115, 206);
+    color:white;
+}
+.Join:active{
+    opacity: 0.7;
+}
+.Tweet{
+    background-color: rgb(121, 157, 219);
+    height: 34px;
+    color: white;
+    width: 70px;
+    border-radius: 16px;
+    border: none;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+.Tweet:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    width:80px;
+    height: 40px;
+}
+.Cart{
+    background-color: rgb(250, 250, 85);
+    color: black;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight:5px;
+    border: none;
+    cursor: pointer;
+}

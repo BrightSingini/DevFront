@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="A simple HTML page to demonstrate object handling in JavaScript.">
+        <title>com</title>
+    </head>
+    <body>
+        <script>
+        //objects in Javascript group things together, its like dictionaries in python 
+        //for example 
+        const product ={
+            name:'socks',
+            price:2000
+        }
+        //console.log(localStorage.getItem('message'));
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+        //lets change the value of the object property
+        product.name = 'bext pyjama';
+        console.log(product.name);
+        //adding new properties to an object 
+        product.newProperty = 'why me';
+        product.newBoolean = true;
+        console.log(product)
+        //deleting and removing objects from objects 
+        delete product.name;
+        console.log(product);
+        console.log(product['newProperty']);
+        //JSON sytax is universal 
+        //built in Json object 
+        //turning a jS to JSON
+        console.log(JSON.stringify(product));
+        //turning a JSON into a JS Object
+        const jsonString = JSON.stringify(product);
+        //use the built in JSON parse method
+        console.log(JSON.parse(jsonString));
+        //saving values more permanently 
+        /* the usage of localStorage to set
+            more permanently 
+        */
+        localStorage.setItem('message','Hello');
+        console.log(localStorage.getItem('message'));
+        </script>
+    </body>
+</html>

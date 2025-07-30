@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A simple HTML page to demonstrate DOM manipulation.">
+        <meta name="keywords" content="HTML, DOM, JavaScript, web development">
+        <title>Document_object_model.com</title>
+    </head>
+    <body>
+        <button>hello</button>
+        <button class ='js_button_two'>button Two</button>
+        <script>
+            //lets use the document object model 
+            console.log(document.title);
+            document.title = "changed.com";
+            console.log(document.body);
+            // the innerHTML property governs all the html in the body
+            console.log(document.body.innerHTML);
+            //accessing and controlling html using the inneHTML property
+                //using querySelector method to manipulate 
+            console.log(document.querySelector('button'));
+            console.log(document.querySelector('.js_button_two'));
+        </script>
+    </body>
+</html>

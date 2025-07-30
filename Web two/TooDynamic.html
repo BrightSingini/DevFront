@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>
+            TryAgain.com
+        </title>
+        <link rel="stylesheet" href="CSS/new_style.css">
+    </head>
+
+    <body>
+        <div class="main_header">
+            <div class="Logo_title">
+                <div class="Logo">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+        <div class="main_section">
+            <div class="js_section">
+                <p class="content_list">
+                    The content is down below 
+                </p>
+                <input placeholder=" comment here in " class="input_comment">
+                <button class="js_button"
+                onclick="
+                    let input_name = document.querySelector('.input_comment').value;
+                    elementCreator(input_name);
+                    document.querySelector('.input_comment').value =' ';
+                "
+                >New section</button>
+            </div>  
+        </div>
+        <script src="Scripts/dynamic.js"></script>
+    </body>
+</html>

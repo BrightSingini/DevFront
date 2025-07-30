@@ -1,0 +1,11 @@
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 1px rgba(20,20,20,0.3);
+}
+.menu-items{
+    display: inline-block;
+}
+.menu-list-item{
+    display: inline-block;
+}

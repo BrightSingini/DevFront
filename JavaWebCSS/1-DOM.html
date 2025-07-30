@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- This is a simple HTML page to demonstrate DOM manipulation with a subscribe button -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="A simple HTML page to demonstrate DOM manipulation with a subscribe button.">
+        <title>DOM_Two.com</title>
+    </head>
+    <body>
+        <p>The subscribe button</p>
+        <button onclick="
+            //lets have the button object changed upon pressing
+          subscribe();
+        "
+        class="js-subscribe-button">Subscribe</button>
+        <script type="text/javascript">
+            //changing the subscribe button after preesing it 
+            //lets build a fuction for that
+            function subscribe()
+            {
+                 //lets have the button object changed upon pressing___
+                const sub_button = document.querySelector('.js-subscribe-button');
+
+                //lets check if the user Sub-scribed__
+                if (sub_button.innerText === 'Subscribe')
+                {
+                    sub_button.innerHTML = 'Subscribed';
+                }else
+                {
+                    sub_button.innerHTML = 'Subscribe';
+                }
+            }
+        </script>
+    </body>
+</html>

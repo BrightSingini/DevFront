@@ -1,0 +1,29 @@
+.input_name,
+.input_pass{
+    display: block;
+    border-radius: 13px;
+    margin-bottom: 13px;
+    box-shadow: 4px 5px rgba(70, 65, 65, 0.5);
+    
+}
+.input_name,
+.input_pass:hover{
+    box-sizing: 25px 13px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.input_name,
+.input_pass{
+    box-sizing: 25px 13px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.yes,
+.no{
+    display:inline-block;
+}
+.question{
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}

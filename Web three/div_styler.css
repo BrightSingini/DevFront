@@ -1,0 +1,32 @@
+.divs{
+    display: inline-block;
+    margin-left: 14px;
+    vertical-align: top ;
+    box-shadow: 4px 4px 4px 4px rgba(58, 51, 51, 0.4);
+    
+}
+.div-image{
+    width: 300px;
+    height: 400px;
+
+}
+.palagraph{
+    margin: 20px 20px 20px 20px;
+    padding: 10px 100px 10px 100px;
+}
+.button_1{
+    height: 80px;
+    width: 20px;
+    font-size: large;
+    margin: 10px 100px 10px 100px;
+    background-color: rgb(52, 100, 245);
+    border-radius: 4px;
+}
+.button_1:hover{
+    box-shadow: 3px 3px 3px 3px rgba(62, 57, 57,0.4);
+    cursor: pointer;
+
+}
+.button_1:active{
+    color: rgb(255, 255, 255);
+}

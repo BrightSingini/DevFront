@@ -1,0 +1,31 @@
+
+.video_title{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    width: 300px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+.video_stats{
+    font-family: Arial;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(101, 101, 101);
+}
+.Author{
+    font-family: Arial;
+    font-size: 13px;
+    margin-top: 0px;
+    color: rgb(101, 101, 101);
+}
+.text_operator{
+    cursor: pointer;
+    color: brown;
+}
+.text_operator:hover{
+    text-decoration: underline;
+    color:aqua;
+}

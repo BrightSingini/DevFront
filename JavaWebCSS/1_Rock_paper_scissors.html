@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is a simple Rock, Paper, Scissors game using HTML and JavaScript -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A simple Rock, Paper, Scissors game using HTML and JavaScript.">
+        <meta name="keywords" content="Rock Paper Scissors, Game, JavaScript, HTML">
+        <title>Game</title>
+    </head>
+    <body>
+        <button onclick=" let computer = computerMove(); 
+            let player = 'Rock';
+            let Game_result = Game(computer,player);
+            playGame(Game_result);
+        ">Rock</button>
+        <button onclick=" let computer_two = computerMove(); 
+            let player_two = 'Paper';
+            let Game_result_two = Game(computer_two,player_two);
+            playGame(Game_result_two);
+        ">Paper</button>
+        <button onclick=" let computer_three = computerMove(); 
+            let player_three = 'Scissors';
+            let Game_result_three = Game(computer_three,player_three);
+            playGame(Game_result_three);
+        ">Scissors</button>
+        <button onclick="
+        //lets reset the 
+        score.Losses = 0;
+        score.ties = 0;
+        score.wins = 0;
+        localStorage.removeItem('score');
+        ">Reset Scores</button>
+        <script>
+            //lets have the scores in a 
+            //lets have functions for the computer to choose 
+            const score = {
+                wins:0,
+                Losses:0,
+                ties:0
+            };
+            //if player chooses a certain 
+            function computerMove()
+            {
+                let randomnMove = Math.floor(Math.random()*3)+1
+                let move = '';
+                if(randomnMove === 1){
+                    move = "Rock";
+                }else if(randomnMove === 2){
+                    move = "Paper";
+                }else{
+                    move = "Scissors";
+                }
+                return move;
+            }
+            function Game(Computer, Player){
+                let result = ''
+                if(Computer === Player)
+                {
+                    result = 'Draw';
+                }else if(Computer === 'Scissors' && Player === 'Rock')
+                {
+                    result = 'Win';
+                }else if(Computer === 'Scissors' && Player === 'Paper')
+                {
+                    result = 'Lose';
+                }else if(Computer === 'Paper' && Player ==='Rock')
+                {
+                    result = 'Lose';
+                }else if(Computer === 'Paper' && Player === 'Scissors')
+                {
+                    result = 'Win';
+                }else if (Computer === 'Rock' && Player === 'Paper')
+                {
+                    result = 'Win';
+                }else if(Computer ==='Rock' && Player ==='Scissors')
+                {
+                    result = 'Lose';
+                }
+                return result;
+            }
+            function playGame(result)
+            {
+                let Score = 0;
+                let Computer = 0;
+                let Player = 0;
+
+                if(result === 'Win')
+                {
+                    score.wins += 1;
+                    alert(`You won !!
+computer has ${returnScore.Losses} wins, Player has ${returnScore.wins} wins, and ${returnScore.ties} ties`);
+                }else if(result === 'Lose')
+                {
+                    score.Losses += 1;
+                    alert(`You Lost !!
+computer has ${returnScore.Losses} wins, Player has ${returnScore.wins} wins, and ${returnScore.ties}ties`);
+                }else {
+                    score.ties += 1;
+                    alert(`Its a Tie 
+computer has ${returnScore.Losses} wins, Player has ${returnScore.wins} wins, and ${returnScore.ties} ties`);
+                }
+            }
+            //using local storage and JSON to store data 
+            //lets change the score Object into a JSON string and have it stored in local storage 
+            let scorify = JSON.stringify(score);
+            console.log(scorify);
+            //lets have the JSON sored in local storage 
+            localStorage.setItem("score",scorify);
+            let returnScore = JSON.parse(localStorage.getItem("score"));
+            //lets convert it back to an Object as this is a string             
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A simple HTML page to demonstrate JSON object handling.">
+        <meta name="keywords" content="JSON, JavaScript, Object, Web Development">
+        <title>Objects_JSON.com</title>
+    </head>
+    <body>
+        <main>
+            <h1>JSON Object Handling</h1>
+            <h2>This page demonstrates how to create and manipulate JSON objects in JavaScript.</h2>
+            <p>Lets have the evaluation of the JSON !!!</p>
+            <button onclick="
+            alert(`${j_son}`);
+            console.log(j_son);
+            ">Click me</button>
+        </main>
+        <script>
+            //lets have an Object hold multiple data types 
+            const Oriented2 = {
+                name: "oriented",
+                rate: 2,
+                description: "die-hard outland",
+                fun: function fuction1(){
+                    alert("the function is called as a methooood!!");
+                }
+            };
+            Oriented2.fun();
+            //lets use the Json object and methods to convert to 
+            let j_son = JSON.stringify(Oriented2);
+            //lets convert to an object 
+            console.log(JSON.parse(j_son));
+        </script>
+    </body>
+</html>

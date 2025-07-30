@@ -1,0 +1,8 @@
+.main_div{
+    display: block;
+    box-shadow: 1px 2px 3px rgba(20,20,20,0.3);
+}
+.js_comments{
+    display:block;
+    box-shadow: 1px 2px 3px rgba(20,20,20,0.3);
+}
